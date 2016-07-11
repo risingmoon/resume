@@ -1,0 +1,49 @@
+{
+	"johns-hopkins": {
+		"type": "education",
+		"name": "Johns Hopkins University",
+		"degree": {
+			"type": "Bachelor of Science",
+			"name": "Engineering Mechanics"
+		}
+	},
+	"pokemon": {
+		"type": "work",
+		"company": {
+			"name": "The Pokemon Company International"
+		},
+		"position": "Software Developer Engineer",
+		"start": "2014-09-01",
+		"end": null
+	},
+	"chameleon": {
+		"type": "work",
+		"company": {
+			"name": "Chameleon Technologies"
+		},
+		"position": "Contractor",
+		"start": "2014-06-01",
+		"end": "2014-0901"
+	},
+	"dose-safety": {
+		"type": "work",
+		"company": {
+			"name": "Dose Safety Inc."
+		},
+		"position": "Software Engineer",
+		"tags": [
+			"matlab",
+			"java", 
+			"c",
+			"machine-learning",
+			"biomedical"]
+	},
+	"bmw": {
+		"type": "work",
+		"company": {
+			"name": "BMW-Brilliance Auotmotive"
+		},
+		"position": "Press Shop Construction Management International Intern (Project Manager)"
+
+	}
+}

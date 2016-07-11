@@ -1,0 +1,5 @@
+{
+	"python": {"type": "programming language", "rating": 8 },
+	"django": {"type": "framework", "rating": 8 },
+	"mysql": {"type": "database", "rating": 6}
+}
