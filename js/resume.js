@@ -1,5 +1,5 @@
 var HeaderModel = Backbone.Model.extend({
-  url: "/data/resume.json"
+  url: "data/resume.json"
 });
 var HeaderView = Backbone.View.extend({
   el: 'body',
