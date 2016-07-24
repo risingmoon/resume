@@ -1,0 +1,18 @@
+[
+	{
+		"slug": "code-fellows",
+		"name":"Code Fellows",
+		"location": "Seattle, WA",
+		"qualifications": "Certificate in Python Programming",
+		"date": "2014",
+		"description": "Intensive eight-week software development boot camp focused on web development in Python"
+	}, {
+		"slug": "johns-hopkins",
+		"name": "Johns Hopkins University",
+		"location": "Baltimore, MD",
+		"qualifications": "Bachelor of Science in Engineering Mechanics",
+		"date": "2011",
+		"description": null
+	}
+]
+

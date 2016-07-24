@@ -1,22 +1,199 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>General Resume</title>
-  </head>
-  <body>
-    <script type="text/template" id="header">
+<head>
+<meta charset="UTF-8">
+<title>General Resume</title>
+</head>
+<body>
+<header>
+	<h1>Justin David Lee</h1>
+	<p>Greater Seattle Area</p>
+	<p>justindavidlee88@gmail.com</p>
+</header>
+<section>
+	<h2>Education</h2>
+	<section>
+		<h3>Code Fellows, Seattle, WA</h3>
+		<p>Certificate in Python Programming, 2014</p>
+		<p>Intensive eight-week software development boot camp focused on web development in Python</p>
+	</section>
+	<section>
+		<h3>Johns Hopkins University, Baltimore, MD</h3>
+		<p>Bachelor of Science in Engineering Mechanics, 2011</p>
+	</section>
+</section>
+<section>
+	<h2>Skills</h2>
+	<section>
+		<p>Web development, testing, deployment, automation, scripting, scraping, algorithms, machine learning, statistics, modeling, data analysis & visualization, control system design, project management, Agile, LAMP</p>
+	</section>
+	<section>
+		<p>Software: Python (+Django, Flask), Matlab, Javasript, Java, (+Android), HTML, CSS, PHP, Linux, Git (Github, Bitbucket), Eclipse, Heroku, VI(M), Amazon Web Services, Travis, Postgre, MySQL, SQLite</p>
+	</section>
+</section>
+<section>
+	<h2>Experience</h2>
+	<section>
+		<h3>Independent Consulting, December 2013 - Present</h3>
+		<p>Python Developer, Software Engineer, Consultant</p>
+		<section>
+			<h4>NW Tech Alliance</h4>
+			<p>Seattle, WA: Consult founder on web technologies to build applications</p>
+			<ul>
+				<li>Educate and tutor founder on Python coding and fundamentals</li>
+				<li>Detail curriculum for founder to develop and deploy application before showcase deadline</li>
+			</ul>
+		</section>
+		<section>
+			<h4>Dose Safety</h4>
+			<p>Seattle, WA: Develop mobile Dose Safety Controller (DSC) and machine learning programs.</p>
+			<ul>
+				<li>Compiled Matlab fuzzy inference system C files into a single Fuzzy Logic Controller (FLC) C file.
+				<li>Migrated FLC into Android device by linking Java and C code via Android Java Native Interface (JNI)
+				<li>Embedded FLC library into Medtronic Automated Ambulatory Glycemic System, an Android Artificial Pancreas application
+				<li>(Current) Migrate Matlab machine learning code to Python and C code</li>
+			</ul>
+		</section>
+		<section>
+			<h4>PurpleWall</h4>
+			<p>Seattle, WA: Consult and triage Django web application and client business.</p>
+			<ul>
+				<li>Outlined new structure and configurations for staging, continuous integration, and deployment</li>
+				<li>Triaged and patched up Django bugs and issues, and provide documentation</li>
+			</ul> 
+		</section>
+		<section>
+			<h4>Uwe Schmidt</h4>
+			<p>Germany: Develop QR code reader application on Linux/Raspberry Pi</p>
+			<ul>
+				<li>Utilized existing Zbar Python and C code libraries to read QR code images</li>
+				<li>Developed live-cam QR code reading capabilities with Python and Raspberry Pi camera libraries</li>
+				<li>Compiled thorough documentations, libraries, and resources to client for project extensibility</li>
+			</ul>
+		</section>
+		<section>
+			<h4>Brand View</h4>
+			<p>United Kingdom: Scrap off product information, sales, and prices from Waitrose Online Grocery market and export as JSON data with Scrapy, a python web scraping framework.</p>
+		</section>
+	</section>
+	<section>
+		<h3>Dose Safety</h3>
+		<p>Seattle, WA September 2012 – September 2013 Software Engineer/ Research Engineer</p>
+		<section>
+			<h4>FLC Project: developed absolute closed-loop fuzzy logic controller (FLC) for Artificial Pancreas Studies</h4>
+			<ul>
+				<li>Implemented smoothing filter for glucose sensor noise reduction.</li>
+				<li>Designed a simplified algorithm for meal detection within fuzzy logic controller system.</li>
+				<li>Provided on-site technical engineering support for Benaroya Research Institute during day and night APS clinical studies at Virginia Mason Hospital in Downtown Seattle.</li>
+			</ul>
+		</section>
+		<section>
+			<h4> Machine Learning Project: developed machine learning (single-layered perceptron) code for 15-45 minutes blood sugar predictions</h4>
+			<ul>
+				<li>Encoded Dynamic Bayesian Network (Perceptron Learning) blood sugar level prediction algorithm with MATLAB.</li>
+				<li>Automated prediction model data acquisition, data analysis, and data visualization with MATLAB scripts.</li>
+				<li>Optimized existing MATLAB/Simulink simulation and modeling by refactoring code and reducing single iteration time from 45 minutes to 90 seconds.</li>
+			</ul>
+		</section>
+		<section>
+			<h3>BMW-Brilliance Automotive</h3>
+			<p>Shenyang, China</p>
+			<p>November 2011 – June 2012</p>
+			<section>
+				<h4>Press Shop Construction Management International Intern (Project Manager)</h4>
+				<p>Car Body Storage and Quality & Launch Tent Project: constructed 16,000 m2 storage tents for car body storage and post-production in Siberian climate</p>
+				<ul>
+					<li>Lead a 40+ team of suppliers, designers, clients, managers, and contractors</li>
+					<li>Tracked project schedule, worker headcount, project milestones and deadlines over 8 months</li>
+					<li>Examined bill of materials/bill of quantities, change requests, and project budget (total approx. 1.4M USD)</li>
+					<li>Implemented short-term and long term solutions to meet both time and Siberian climate constraints, satisfy basic structural engineering and facility requirements, as well as prevent construction from affecting car production</li>
+					<li>Executed 48 hour rushed-asphalt construction successfully through client (logistics and production department) negotiations, supplier coordination, safety implementation, budget reduction, and quality inspections</li>
+				</ul>
+			</section>
+			<section>
+				<h4>Press Shop Construction Management Project</h4>
+				<ul>
+					<li>Created management database with Access and Visual Basic to reduce basic management tasks from 5 hours to 30 min</li>
+					<li>Utilized management database to quickly generate List of Priority templates for managers and engineers</li>
+					<li>Provided on-site management of construction safety, organization and quality inspection</li>
+				</ul>
+			</section>
+		</section>
+	</section>
+<section>
+	<h2>Projects</h2>
+	<section>
+		<p>Chemical Price Scraper:  A centralized database of scraped chemical prices that compares price per quantity and purity levels of multiple chemical products for an organic chemistry researcher at UW. Prototype is deployed over Heroku.</p>
+	</section>
+	<section>
+		<p>Craigslist Apartment Scraper: a Python mash-up of scraped Craigslist apartment listings and geocoding with Google pubic API.</p>
+	</section>
+	<section>
+		<p>Flask Microblog: A microblog application created by Flask that registers users to write and post blogs on a web domain. The microblog uses SQL-Alchemy as an Objection Relational Mapper that works with Postgres database. Microblog implements cross-site request forgery security with Seasurf, and sends confirmation email to registered users with Gmail server.</p>
+	</section>
+	<section>
+		<p>Photograph Sharing App: Django application that allows users to upload and share photos on the web and to organize photos into albums and label with tags.</p>
+	</section>
+	<section>
+		<p>Resume Builder: Group final project that allows users to store data in a centralized location in Postgres and quickly generate resume outlines and templates. A resume version control system that keeps resumes updated, organized, and memory efficient.</p>
+	</section>
+</section>
+<section>
+	<h2>Publication/Presentation</h2>
+	<p>Lee J., Kircher R., Matheson D., Mauseth R. Dynamic Bayesian Network (DBN) Model for Blood Glucose Prediction. American Diabetes Association Conference, June 21-25, Chicago, IL.</p>
+</section>
+<section>
+	<h2>Professional Organizations</h2>
+	<p>National Association of Asian American Professionals, September 2012 – Present</p>
+	<p>Johns Hopkins Alumni – Seattle Chapter, November 2012 – Present</p>
+	<p>Society of Automotive Engineers, September 2010 – April 2012</p>
+</section>
+<section>
+	<h2>Other Activities and Interests</h2>
+	<p>Startup Weekend, hackathons, snowboarding, Arduino, international films, camping, traveling, biking and baking cheesecakes.</p>
+</section>
+<script type="text/template" id="header">
       <header>
         <h1><%= full_name %></h1>
 	<p><%= address %></p>
 	<p><%= phone_number %></p>
 	<p><%= email %></p>
       </header>
-    </script>
-    <script src="js/jquery-3.0.0.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/backbone.js"></script>
-    <script src="js/resume.js"></script>
-  </body>
+</script>
+<script type="text/template", id="education">
+<section>
+<h2>Education</h2>
+</section>
+</script>
+<script type="text/template", id="skills">
+<section>
+<h2>Skills</h2>
+</section>
+</script>
+<script type="text/template", id="experience">
+<section>
+<h2>Experience</h2>
+</section>
+</script>
+<script type="text/template", id="projects">
+<section>
+<h2>Projects</h2>
+</section>
+</script>
+<script type="text/template", id="organizations">
+<section>
+<h2>Organizations</h2>
+</section>
+</script>
+<script type="text/template", id="interests">
+<section>
+<h2>Interests</h2>
+</section>
+</script>
+<script src="js/jquery-3.0.0.js"></script>
+<script src="js/underscore.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/resume.js"></script>
+</body>
 </html>
 
