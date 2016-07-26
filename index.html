@@ -148,10 +148,6 @@
 	<p>Johns Hopkins Alumni – Seattle Chapter, November 2012 – Present</p>
 	<p>Society of Automotive Engineers, September 2010 – April 2012</p>
 </section>
-<section>
-	<h2>Other Activities and Interests</h2>
-	<p>Startup Weekend, hackathons, snowboarding, Arduino, international films, camping, traveling, biking and baking cheesecakes.</p>
-</section>
 <script type="text/template" id="header">
       <header>
         <h1><%= full_name %></h1>
@@ -182,18 +178,30 @@
 </script>
 <script type="text/template", id="organizations">
 <section>
-<h2>Organizations</h2>
+<h2><%= title %></h2>
 </section>
 </script>
 <script type="text/template", id="interests">
 <section>
-<h2>Interests</h2>
+	<h2><%= title %></h2>
+	<p><%= interests %></p>
 </section>
 </script>
 <script src="js/jquery-3.0.0.js"></script>
 <script src="js/underscore.js"></script>
 <script src="js/backbone.js"></script>
 <script src="js/resume.js"></script>
+<script>
+var app = app || {};
+//app.resume = new app.ResumeModel();
+//app.resume.fetch();
+//app.interests = app.resume.get('interests');
+//// new app.InterestsView({model: new app.InterestsModel(app.resume.get('interests'))}); 
+//var test = new app.InterestsView({model: app.interests}); 
+$(function(){
+	new app.ResumeView();
+});
+</script>
 </body>
 </html>
 

@@ -62,5 +62,43 @@ var HeaderView = Backbone.View.extend({
   }
 });
 
-//new HeaderView();
+app.InterestsModel = Backbone.Model.extend({
+	initialize: function(attributes) {
+		this.set({
+			title: attributes.title,
+			interests: attributes.data.join(', ')
+		});
+	}
+});
 
+app.InterestsView = Backbone.View.extend({
+	el: "body",
+	template: _.template($('#interests').html()),
+	initialize: function() {
+		this.listenTo(this.model, 'change', this.render);
+		this.render();
+	},
+	render: function() {
+		this.$el.append(this.template(this.model.attributes));
+		return this;
+	}
+});
+
+app.ResumeModel = Backbone.Model.extend({
+	url: '/resume/data/index.json'
+});
+
+app.ResumeView = Backbone.View.extend({
+	el: 'body',
+	initialize: function() {
+		app.resume = new app.ResumeModel();
+		app.resume.fetch({
+			success: function() {
+				new app.InterestsView({model: new app.InterestsModel(app.resume.get('interests'))});
+			}
+		});
+		//new app.InterestsView({model: new app.InterestsModel(app.resume.get('interests'))});
+		//app.interests = new app.InterestsModel(app.resume.get('interests'));
+		//new app.InterestsView({model: app.interests)});
+	},
+});
